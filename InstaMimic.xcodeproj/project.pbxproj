@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A476900C1B2787FC00F5B383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A476900B1B2787FC00F5B383 /* main.m */; };
+		A476900F1B2787FC00F5B383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A476900E1B2787FC00F5B383 /* AppDelegate.m */; };
+		A47690121B2787FC00F5B383 /* InstaMimic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A47690101B2787FC00F5B383 /* InstaMimic.xcdatamodeld */; };
+		A47690181B2787FC00F5B383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47690161B2787FC00F5B383 /* Main.storyboard */; };
+		A476901A1B2787FC00F5B383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47690191B2787FC00F5B383 /* Images.xcassets */; };
+		A476901D1B2787FC00F5B383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A476901B1B2787FC00F5B383 /* LaunchScreen.xib */; };
+		A47690291B2787FC00F5B383 /* InstaMimicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47690281B2787FC00F5B383 /* InstaMimicTests.m */; };
+		A47690341B278CA600F5B383 /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47690331B278CA600F5B383 /* HomeFeedViewController.m */; };
+		A47690371B278CC700F5B383 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47690361B278CC700F5B383 /* ProfileViewController.m */; };
+		A476903A1B278CD800F5B383 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47690391B278CD800F5B383 /* CameraViewController.m */; };
+		A476903D1B278CE900F5B383 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A476903C1B278CE900F5B383 /* SearchViewController.m */; };
+		A47690461B278DB000F5B383 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47690451B278DB000F5B383 /* ActivityViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47690231B2787FC00F5B383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4768FFE1B2787FC00F5B383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47690051B2787FC00F5B383;
+			remoteInfo = InstaMimic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A47690061B2787FC00F5B383 /* InstaMimic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMimic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A476900A1B2787FC00F5B383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A476900B1B2787FC00F5B383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A476900D1B2787FC00F5B383 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A476900E1B2787FC00F5B383 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A47690111B2787FC00F5B383 /* InstaMimic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaMimic.xcdatamodel; sourceTree = "<group>"; };
+		A47690171B2787FC00F5B383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47690191B2787FC00F5B383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A476901C1B2787FC00F5B383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A47690221B2787FC00F5B383 /* InstaMimicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaMimicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47690271B2787FC00F5B383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47690281B2787FC00F5B383 /* InstaMimicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaMimicTests.m; sourceTree = "<group>"; };
+		A47690321B278CA600F5B383 /* HomeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
+		A47690331B278CA600F5B383 /* HomeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
+		A47690351B278CC700F5B383 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A47690361B278CC700F5B383 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A47690381B278CD800F5B383 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		A47690391B278CD800F5B383 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		A476903B1B278CE900F5B383 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A476903C1B278CE900F5B383 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		A47690441B278DB000F5B383 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		A47690451B278DB000F5B383 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47690031B2787FC00F5B383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A476901F1B2787FC00F5B383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4768FFD1B2787FC00F5B383 = {
+			isa = PBXGroup;
+			children = (
+				A47690081B2787FC00F5B383 /* InstaMimic */,
+				A47690251B2787FC00F5B383 /* InstaMimicTests */,
+				A47690071B2787FC00F5B383 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A47690071B2787FC00F5B383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47690061B2787FC00F5B383 /* InstaMimic.app */,
+				A47690221B2787FC00F5B383 /* InstaMimicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47690081B2787FC00F5B383 /* InstaMimic */ = {
+			isa = PBXGroup;
+			children = (
+				A47690321B278CA600F5B383 /* HomeFeedViewController.h */,
+				A47690331B278CA600F5B383 /* HomeFeedViewController.m */,
+				A476903B1B278CE900F5B383 /* SearchViewController.h */,
+				A476903C1B278CE900F5B383 /* SearchViewController.m */,
+				A47690381B278CD800F5B383 /* CameraViewController.h */,
+				A47690391B278CD800F5B383 /* CameraViewController.m */,
+				A47690441B278DB000F5B383 /* ActivityViewController.h */,
+				A47690451B278DB000F5B383 /* ActivityViewController.m */,
+				A47690351B278CC700F5B383 /* ProfileViewController.h */,
+				A47690361B278CC700F5B383 /* ProfileViewController.m */,
+				A47690161B2787FC00F5B383 /* Main.storyboard */,
+				A476900D1B2787FC00F5B383 /* AppDelegate.h */,
+				A476900E1B2787FC00F5B383 /* AppDelegate.m */,
+				A47690191B2787FC00F5B383 /* Images.xcassets */,
+				A476901B1B2787FC00F5B383 /* LaunchScreen.xib */,
+				A47690101B2787FC00F5B383 /* InstaMimic.xcdatamodeld */,
+				A47690091B2787FC00F5B383 /* Supporting Files */,
+			);
+			path = InstaMimic;
+			sourceTree = "<group>";
+		};
+		A47690091B2787FC00F5B383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A476900A1B2787FC00F5B383 /* Info.plist */,
+				A476900B1B2787FC00F5B383 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A47690251B2787FC00F5B383 /* InstaMimicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A47690281B2787FC00F5B383 /* InstaMimicTests.m */,
+				A47690261B2787FC00F5B383 /* Supporting Files */,
+			);
+			path = InstaMimicTests;
+			sourceTree = "<group>";
+		};
+		A47690261B2787FC00F5B383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47690271B2787FC00F5B383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47690051B2787FC00F5B383 /* InstaMimic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A476902C1B2787FC00F5B383 /* Build configuration list for PBXNativeTarget "InstaMimic" */;
+			buildPhases = (
+				A47690021B2787FC00F5B383 /* Sources */,
+				A47690031B2787FC00F5B383 /* Frameworks */,
+				A47690041B2787FC00F5B383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaMimic;
+			productName = InstaMimic;
+			productReference = A47690061B2787FC00F5B383 /* InstaMimic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A47690211B2787FC00F5B383 /* InstaMimicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A476902F1B2787FC00F5B383 /* Build configuration list for PBXNativeTarget "InstaMimicTests" */;
+			buildPhases = (
+				A476901E1B2787FC00F5B383 /* Sources */,
+				A476901F1B2787FC00F5B383 /* Frameworks */,
+				A47690201B2787FC00F5B383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47690241B2787FC00F5B383 /* PBXTargetDependency */,
+			);
+			name = InstaMimicTests;
+			productName = InstaMimicTests;
+			productReference = A47690221B2787FC00F5B383 /* InstaMimicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4768FFE1B2787FC00F5B383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Adam;
+				TargetAttributes = {
+					A47690051B2787FC00F5B383 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A47690211B2787FC00F5B383 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = A47690051B2787FC00F5B383;
+					};
+				};
+			};
+			buildConfigurationList = A47690011B2787FC00F5B383 /* Build configuration list for PBXProject "InstaMimic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4768FFD1B2787FC00F5B383;
+			productRefGroup = A47690071B2787FC00F5B383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47690051B2787FC00F5B383 /* InstaMimic */,
+				A47690211B2787FC00F5B383 /* InstaMimicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47690041B2787FC00F5B383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47690181B2787FC00F5B383 /* Main.storyboard in Resources */,
+				A476901D1B2787FC00F5B383 /* LaunchScreen.xib in Resources */,
+				A476901A1B2787FC00F5B383 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47690201B2787FC00F5B383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A47690021B2787FC00F5B383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47690341B278CA600F5B383 /* HomeFeedViewController.m in Sources */,
+				A476900F1B2787FC00F5B383 /* AppDelegate.m in Sources */,
+				A476900C1B2787FC00F5B383 /* main.m in Sources */,
+				A47690371B278CC700F5B383 /* ProfileViewController.m in Sources */,
+				A476903A1B278CD800F5B383 /* CameraViewController.m in Sources */,
+				A476903D1B278CE900F5B383 /* SearchViewController.m in Sources */,
+				A47690121B2787FC00F5B383 /* InstaMimic.xcdatamodeld in Sources */,
+				A47690461B278DB000F5B383 /* ActivityViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A476901E1B2787FC00F5B383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47690291B2787FC00F5B383 /* InstaMimicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47690241B2787FC00F5B383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47690051B2787FC00F5B383 /* InstaMimic */;
+			targetProxy = A47690231B2787FC00F5B383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47690161B2787FC00F5B383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47690171B2787FC00F5B383 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A476901B1B2787FC00F5B383 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A476901C1B2787FC00F5B383 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A476902A1B2787FC00F5B383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A476902B1B2787FC00F5B383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A476902D1B2787FC00F5B383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstaMimic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A476902E1B2787FC00F5B383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstaMimic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A47690301B2787FC00F5B383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InstaMimicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaMimic.app/InstaMimic";
+			};
+			name = Debug;
+		};
+		A47690311B2787FC00F5B383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InstaMimicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaMimic.app/InstaMimic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A47690011B2787FC00F5B383 /* Build configuration list for PBXProject "InstaMimic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A476902A1B2787FC00F5B383 /* Debug */,
+				A476902B1B2787FC00F5B383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A476902C1B2787FC00F5B383 /* Build configuration list for PBXNativeTarget "InstaMimic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A476902D1B2787FC00F5B383 /* Debug */,
+				A476902E1B2787FC00F5B383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A476902F1B2787FC00F5B383 /* Build configuration list for PBXNativeTarget "InstaMimicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47690301B2787FC00F5B383 /* Debug */,
+				A47690311B2787FC00F5B383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A47690101B2787FC00F5B383 /* InstaMimic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A47690111B2787FC00F5B383 /* InstaMimic.xcdatamodel */,
+			);
+			currentVersion = A47690111B2787FC00F5B383 /* InstaMimic.xcdatamodel */;
+			path = InstaMimic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4768FFE1B2787FC00F5B383 /* Project object */;
+}
