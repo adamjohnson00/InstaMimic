@@ -20,6 +20,9 @@
 {
     [super viewDidLoad];
 
+    
+
+
 }
 
 
@@ -42,7 +45,6 @@
     UIImagePickerController *cameraController = [[UIImagePickerController alloc] init];
 
     cameraController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    cameraController.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
     cameraController.allowsEditing = NO;
     cameraController.delegate = delegate;
 
