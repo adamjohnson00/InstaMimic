@@ -105,7 +105,38 @@
                     <view key="view" contentMode="scaleToFill" id="VLY-Wg-M1C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DH3-sc-Onf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DH3-sc-Onf" firstAttribute="leading" secondItem="VLY-Wg-M1C" secondAttribute="leadingMargin" constant="-16" id="9OI-Oj-zH5"/>
+                            <constraint firstItem="DH3-sc-Onf" firstAttribute="top" secondItem="V0a-nN-BqQ" secondAttribute="bottom" id="Q1K-GZ-zlE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DH3-sc-Onf" secondAttribute="trailing" constant="-16" id="VbH-FK-tKE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DH3-sc-Onf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9OI-Oj-zH5"/>
+                                <exclude reference="Q1K-GZ-zlE"/>
+                                <exclude reference="VbH-FK-tKE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DH3-sc-Onf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9OI-Oj-zH5"/>
+                                <include reference="Q1K-GZ-zlE"/>
+                                <include reference="VbH-FK-tKE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="9TJ-hY-eAA"/>
                 </viewController>
