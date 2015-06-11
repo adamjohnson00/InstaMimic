@@ -23,6 +23,10 @@
 		40237FDE1B29010B00667A2A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FDD1B29010B00667A2A /* libz.dylib */; };
 		40237FE01B29012200667A2A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FDF1B29012200667A2A /* libsqlite3.dylib */; };
 		40237FE31B29177900667A2A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40237FE21B29177900667A2A /* LogInViewController.m */; };
+		40237FF61B29F7E500667A2A /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FF21B29F7E500667A2A /* ParseCrashReporting.framework */; };
+		40237FF71B29F7E500667A2A /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FF31B29F7E500667A2A /* ParseFacebookUtils.framework */; };
+		40237FF81B29F7E500667A2A /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FF41B29F7E500667A2A /* ParseFacebookUtilsV4.framework */; };
+		40237FF91B29F7E500667A2A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40237FF51B29F7E500667A2A /* ParseUI.framework */; };
 		A476900C1B2787FC00F5B383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A476900B1B2787FC00F5B383 /* main.m */; };
 		A476900F1B2787FC00F5B383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A476900E1B2787FC00F5B383 /* AppDelegate.m */; };
 		A47690121B2787FC00F5B383 /* InstaMimic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A47690101B2787FC00F5B383 /* InstaMimic.xcdatamodeld */; };
@@ -65,6 +69,10 @@
 		40237FDF1B29012200667A2A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		40237FE11B29177900667A2A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		40237FE21B29177900667A2A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		40237FF21B29F7E500667A2A /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		40237FF31B29F7E500667A2A /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		40237FF41B29F7E500667A2A /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		40237FF51B29F7E500667A2A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		A47690061B2787FC00F5B383 /* InstaMimic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMimic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A476900A1B2787FC00F5B383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A476900B1B2787FC00F5B383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,16 +107,20 @@
 				40237FDC1B2900EE00667A2A /* SystemConfiguration.framework in Frameworks */,
 				40237FDA1B2900D800667A2A /* StoreKit.framework in Frameworks */,
 				40237FD81B2900CF00667A2A /* Social.framework in Frameworks */,
+				40237FF71B29F7E500667A2A /* ParseFacebookUtils.framework in Frameworks */,
 				40237FD61B2900B100667A2A /* Security.framework in Frameworks */,
 				40237FD41B2900A400667A2A /* QuartzCore.framework in Frameworks */,
 				40237FD21B29009A00667A2A /* MobileCoreServices.framework in Frameworks */,
 				40237FD01B29008A00667A2A /* CoreLocation.framework in Frameworks */,
+				40237FF91B29F7E500667A2A /* ParseUI.framework in Frameworks */,
 				40237FCE1B29008000667A2A /* CoreGraphics.framework in Frameworks */,
 				40237FCC1B29007100667A2A /* CFNetwork.framework in Frameworks */,
 				40237FCA1B29006A00667A2A /* AudioToolbox.framework in Frameworks */,
 				40237FC81B29005100667A2A /* Accounts.framework in Frameworks */,
+				40237FF81B29F7E500667A2A /* ParseFacebookUtilsV4.framework in Frameworks */,
 				40237FC41B28FF5E00667A2A /* Parse.framework in Frameworks */,
 				40237FC61B28FF7500667A2A /* Bolts.framework in Frameworks */,
+				40237FF61B29F7E500667A2A /* ParseCrashReporting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +168,10 @@
 		A47690081B2787FC00F5B383 /* InstaMimic */ = {
 			isa = PBXGroup;
 			children = (
+				40237FF21B29F7E500667A2A /* ParseCrashReporting.framework */,
+				40237FF31B29F7E500667A2A /* ParseFacebookUtils.framework */,
+				40237FF41B29F7E500667A2A /* ParseFacebookUtilsV4.framework */,
+				40237FF51B29F7E500667A2A /* ParseUI.framework */,
 				40237FE11B29177900667A2A /* LogInViewController.h */,
 				40237FE21B29177900667A2A /* LogInViewController.m */,
 				A47690321B278CA600F5B383 /* HomeFeedViewController.h */,

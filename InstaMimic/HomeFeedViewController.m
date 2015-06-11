@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    PFObject *gameScore = [PFObject objectWithClassName:@"Game Time"];
+    gameScore[@"score"] = @1337;
+    gameScore[@"playerName"] = @"Adam";
+    gameScore[@"cheat"] = @NO;
+    
     // Do any additional setup after loading the view.
 //    PFUser *user = [PFUser user];
 //    user.username = @"my name";
