@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VrD-dV-x6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VrD-dV-x6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -83,10 +83,44 @@
                     <view key="view" contentMode="scaleToFill" id="Ut1-kJ-HUT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J7D-3m-gWD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J7D-3m-gWD" firstAttribute="leading" secondItem="Ut1-kJ-HUT" secondAttribute="leadingMargin" constant="-16" id="Vry-Dy-2A4"/>
+                            <constraint firstItem="J7D-3m-gWD" firstAttribute="top" secondItem="Ut1-kJ-HUT" secondAttribute="topMargin" id="Y5P-9l-s72"/>
+                            <constraint firstItem="h5L-xp-nee" firstAttribute="top" secondItem="J7D-3m-gWD" secondAttribute="bottom" id="w6X-vi-34N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J7D-3m-gWD" secondAttribute="trailing" constant="-16" id="whV-HR-4qg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="J7D-3m-gWD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Vry-Dy-2A4"/>
+                                <exclude reference="Y5P-9l-s72"/>
+                                <exclude reference="whV-HR-4qg"/>
+                                <exclude reference="w6X-vi-34N"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="J7D-3m-gWD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Vry-Dy-2A4"/>
+                                <include reference="Y5P-9l-s72"/>
+                                <include reference="whV-HR-4qg"/>
+                                <include reference="w6X-vi-34N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Home Feed" id="Pqh-I6-qNe"/>
                     <connections>
+                        <outlet property="imageView" destination="J7D-3m-gWD" id="MIb-kl-od5"/>
                         <segue destination="lwD-Qi-6aA" kind="modal" identifier="BackToLogInSegue" id="bYn-Hl-YbG"/>
                     </connections>
                 </viewController>
