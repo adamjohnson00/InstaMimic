@@ -1,11 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VrD-dV-x6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VrD-dV-x6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="PG7-Ty-gn9">
+            <objects>
+                <viewController id="zFA-rL-Pgb" customClass="LogInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99b-An-Msk"/>
+                        <viewControllerLayoutGuide type="bottom" id="b99-gO-XcO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nTp-B3-mkU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXd-wI-lEO">
+                                <rect key="frame" x="188" y="265" width="225" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="266" width="225" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dph-2O-GXh">
+                                <rect key="frame" x="188" y="322" width="225" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="322" width="225" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GI-B7-fTT">
+                                <rect key="frame" x="243" y="384" width="113" height="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="384" width="113" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="zFA-rL-Pgb" eventType="touchUpInside" id="ytX-GX-vEh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-IH-v7D">
+                                <rect key="frame" x="246" y="422" width="107" height="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="422" width="107" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="logInTapped:" destination="zFA-rL-Pgb" eventType="touchUpInside" id="QBx-95-7NL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uWT-KN-WNM"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Dph-2O-GXh" id="MyY-OM-IEt"/>
+                        <outlet property="usernameTextfield" destination="JXd-wI-lEO" id="Pnl-dZ-NfO"/>
+                        <segue destination="Ls5-0L-n4C" kind="modal" identifier="LoginSegue" id="EBK-0m-hb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hs-ZJ-QSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-2246"/>
+        </scene>
         <!--Home Feed-->
         <scene sceneID="TkE-o2-Xu2">
             <objects>
@@ -20,6 +86,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Feed" id="Pqh-I6-qNe"/>
+                    <connections>
+                        <segue destination="lwD-Qi-6aA" kind="modal" identifier="BackToLogInSegue" id="bYn-Hl-YbG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeo-ls-QuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,5 +371,26 @@
             </objects>
             <point key="canvasLocation" x="-1024.5" y="627"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dof-dd-BFE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lwD-Qi-6aA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nMb-iz-y4w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zFA-rL-Pgb" kind="relationship" relationship="rootViewController" id="gZl-F1-KWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ib5-0N-m3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="-2246"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EBK-0m-hb8"/>
+    </inferredMetricsTieBreakers>
 </document>
